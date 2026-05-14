@@ -67,7 +67,7 @@ public class Main {
         double avgDeleteTime = (totalDeleteTime / (double) DELETE) / 1000.0;
         double avgDeleteOps = totalDeleteOps / (double) DELETE;
 
-        String report = "=== Отчет: 2-3 дерево (Рекурсивная реализация) ===\n\n" +
+        String report = " Отчет: 2-3 дерево (Рекурсивная реализация) \n\n" +
                 "1. Вставка (" + SIZE + " элементов):\n" +
                 String.format("  Среднее время: %.2f мкс\n", avgInsertTime) +
                 String.format("  Среднее кол-во операций: %.2f\n\n", avgInsertOps) +

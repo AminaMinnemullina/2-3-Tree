@@ -13,7 +13,7 @@ public class TwoThreeTree {
     public long getOps() { return operations; }
     private void addOp() { operations++; }
 
-    // ==================== ПОИСК ====================
+    // ПОИСК
     public boolean search(int key) {
         return searchRecursive(root, key);
     }
@@ -39,7 +39,7 @@ public class TwoThreeTree {
         }
     }
 
-    // ==================== ВСТАВКА ====================
+    // ВСТАВКА
     public void insert(int key) {
         if (root == null) {
             addOp();
@@ -163,7 +163,7 @@ public class TwoThreeTree {
         return new SplitResult(left, right, mid);
     }
 
-    // ==================== УДАЛЕНИЕ ====================
+    // УДАЛЕНИЕ
     public void delete(int key) {
         addOp();
         if (root == null) return;
